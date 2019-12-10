@@ -78,7 +78,32 @@ then
 					 read
 					 sleep 2
 					 clear
-					 
+					 #--------------------------------------------------------------------------------------------------------------------
+					 echo
+					 echo -e "Instalação das dependências do PIP para o monitoramento do MySQL via Netdata, pressione <Enter> para continuar"
+					 read
+					 sleep 2
+					 clear
+
+					 echo -e "Atualizando o PIP"
+					 pip install --upgrade pip
+					 echo
+
+					 echo -e "Instalando o MysqlCliente"
+					 pip install mysqlclient
+
+					 echo
+
+					 echo -e "Instalando o PyMysql"
+					 pip install PyMySQL
+					 echo
+
+					 echo -e "Instalação das dependências do PIP feita com sucesso!!!, pressione <Enter> para continuar"
+					 read
+					 sleep 2
+					 clear					 
+					 #---------------------------------------------------------------------------------------------------------------------------------	 
+
 					 echo -e "Atualizando o arquivo de configuração do MySQL para acesso as informações via Netdata, pressione <Enter> para continuar"
 					 read
 					 sleep 2
